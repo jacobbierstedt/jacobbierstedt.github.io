@@ -1,6 +1,6 @@
 # _config.yml
-title: Jacob Bierstedt's Homepage
-description: description
+title: Jacob Bierstedt
+description: Last modified 5-23-2025
 author: Jacob Bierstedt
 email: jacob.r.bierstedt@gmail.com
 baseurl: ""  # Keep empty for user/organization site (username.github.io), else use "/reponame"
@@ -11,7 +11,6 @@ theme: minima  # Built-in theme (good for blogging)
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 
 # Pagination (optional)
