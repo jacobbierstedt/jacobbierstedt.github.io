@@ -3,33 +3,24 @@ title: Jacob Bierstedt
 description: Last modified 5-23-2025
 author: Jacob Bierstedt
 email: jacob.r.bierstedt@gmail.com
-baseurl: ""  # Keep empty for user/organization site (username.github.io), else use "/reponame"
-url: "https://jacobbierstedt.github.io"  # Your GitHub Pages URL
+baseurl: ""
+url: "https://jacobbierstedt.github.io"
 
-theme: minima  # Built-in theme (good for blogging)
+theme: minima
+google_analytics: G-8EVPE58C2E
 
-# Build settings
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
 
-# Pagination (optional)
 paginate: 5
 paginate_path: "/page:num/"
 
 # Permalinks
 permalink: /:year/:month/:day/:title/
 
-# Social
-# twitter_username: your_twitter
-# github_username: yourusername
-
-# Exclude these files from production site
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
-
-# Optional Google Analytics
-# google_analytics: UA-XXXXXXXXX-X
