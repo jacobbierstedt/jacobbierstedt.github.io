@@ -106,7 +106,7 @@ auto_vec:
 Initial checks are performed and then it moves into to the main body of the loop, `.L3`. We move `a[i]` into `edx`, add `b[i]` to `edx`, and move `edx` to `c[i]`. We increment i (`add    rax, 4`) and check if the loop is done.
 
 
-If we compile with `gcc -O2 -ftree-vectorize` we can look at the godbolt output (full output at the bottom of the page), we can see that there is a lot more going on. The scalar loop from above is there as a runtime fallback if for any reason the loop can't be vectorized (`.L3` `.L9`), and there is additional SIMD instructions with vector registers to optimize where we can.
+If we compile with `gcc -O2 -ftree-vectorize` we can look at the godbolt output (full output at the bottom of the page), we can see that there is a lot more going on. The scalar loop from above is there as a runtime fallback if for any reason the loop can't be vectorized (`.L3` `.L9`), and there are additional SIMD instructions with vector registers to optimize where we can.
 
 ```nasm
 .L5:
